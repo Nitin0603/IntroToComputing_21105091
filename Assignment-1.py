@@ -18,7 +18,10 @@ taxable_income=Gross_income-standard_ded-(dependent_ded*NumberOfDependent)
 # Calculating tax
 tax_rate=20
 tax=taxable_income*(tax_rate/100)
-print("Your tax is :",tax)
+if tax<=0 :
+    print("Your income is low so your tax 0")
+else :
+    print("Your tax is :",tax)
 
 
 # Store Data types into list (Ans-3)
