@@ -10,9 +10,13 @@ Index of a in given string : 10
 After Removing spaces from given string : Pythonisacasesensitivelanguage
 
 ============================================================================= RESTART: D:\Assignments\Q2.py ============================================================================
+Enter your name : Nitin
+Enter your SID : 21105091
+Enter your CGPA : 9.9
+Enter you department : ECE
 Hey Nitin Here!
 My SID is 21105091 
-I am from ECE and my CGPA is 9.9
+I am from ECE and my CGPA is 9.900000
 
 ============================================================================= RESTART: D:\Assignments\Q3.py ============================================================================
 a&b : 8
