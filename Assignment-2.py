@@ -27,11 +27,11 @@ print("After Removing spaces from given string :",new_str)
 
 
 # # *********** Answer -2 ************
-Name="Nitin"
-SID=21105091
-CGPA=9.9
-department="ECE"
-print("Hey",Name + " Here!\nMy SID is",SID,"\nI am from",department+" and my CGPA is",CGPA )
+Name=str(input("Enter your name : "))
+SID=int(input("Enter your SID : "))
+CGPA=float(input("Enter your CGPA : "))
+department=str(input("Enter you department : "))
+print("Hey %s Here!\nMy SID is %d \nI am from %s and my CGPA is %f"%(Name,SID,department,CGPA))
 
 
 # *********** Answer -3 *************
