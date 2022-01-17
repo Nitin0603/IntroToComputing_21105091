@@ -70,9 +70,9 @@ else:
 
 
 # ************ Answer -6 ***********
-Len_side1=int(input("Enter length of side 1 : "))
-Len_side2=int(input("Enter length of side 2 : "))
-Len_side3=int(input("Enter length of side 3 : "))
+Len_side1=int(input("Enter length of side 1st : "))
+Len_side2=int(input("Enter length of side 2nd : "))
+Len_side3=int(input("Enter length of side 3rd : "))
 if(Len_side1>Len_side2+Len_side3 or Len_side2>Len_side3+Len_side1 or Len_side3>Len_side1+Len_side2):
     print("No")
 else:
