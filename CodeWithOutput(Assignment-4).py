@@ -35,7 +35,8 @@ frozenset({0, 4, 5, 6, 9})
 Maximum element in set is 9 and its hash value is 9
 
 =============================================================== RESTART: D:\Assignments_of_Computing\Assignment-4\Q-4.py ===============================================================
-
+Object destroyed
+      
 =============================================================== RESTART: D:\Assignments_of_Computing\Assignment-4\Q-5.py ===============================================================
 Employee   Name    Salary
   1        Mehak   40000
