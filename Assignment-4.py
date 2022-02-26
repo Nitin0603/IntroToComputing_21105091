@@ -124,7 +124,9 @@ class Student:
     def __del__(self):
         print('Object destroyed')
 
-
+Student_1=Student('xyz',1234567)
+del Student_1
+        
 
 #  ******* Que - 5 ************
 
