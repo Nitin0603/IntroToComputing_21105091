@@ -32,7 +32,7 @@ False
 [5, 6, 9]
 {0, 4, 5, 6, 9}
 frozenset({0, 4, 5, 6, 9})
-Maximum element in set is 9 and its hash value is 9
+Maximum element in set is 9 and its hash value is 8576838480711242852
 
 =============================================================== RESTART: D:\Assignments_of_Computing\Assignment-4\Q-4.py ===============================================================
 Object destroyed
