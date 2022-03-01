@@ -111,7 +111,7 @@ print(immutable_set)
 
 # part f
 max_ele=max(immutable_set)
-print('Maximum element in set is %d and its hash value is %d'%(max_ele, hash(max_ele)))
+print('Maximum element in set is %d and its hash value is %d'%(max_ele, hash(str(max_ele))))
 
 
 
