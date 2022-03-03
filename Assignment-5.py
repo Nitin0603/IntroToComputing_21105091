@@ -20,11 +20,11 @@ Label_4=Label(win,text='GST (in %) : ',font=('Arial black',10))
 Label_4.place(x=175,y=140)
 def myclick():
     global Answer
-    if(Entry_1.get()=='' or Entry_2.get()=='' or int(Entry_1.get())<0 or int(Entry_2.get())<0):
+    if(Entry_1.get()=='' or Entry_2.get()=='' or float(Entry_1.get())<0 or float(Entry_2.get())<0):
         messagebox.showwarning("Invalid input", "Enter all valid inputs (Can't zero or negative)")
         return
-    Net_price=int(Entry_2.get())
-    Orignal_cost=int(Entry_1.get())
+    Net_price=float(Entry_2.get())
+    Orignal_cost=float(Entry_1.get())
     if(Orignal_cost==0):
         messagebox.showwarning("Invalid Original Cost", "Can't Zero or negative")
         return
