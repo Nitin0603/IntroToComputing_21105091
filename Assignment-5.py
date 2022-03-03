@@ -19,14 +19,14 @@ Entry_2.place(x=270,y=100)
 Label_4=Label(win,text='GST (in %) : ',font=('Arial black',10))
 Label_4.place(x=175,y=140)
 def myclick():
+    global Answer
     if(Entry_1.get()=='' or Entry_2.get()=='' or int(Entry_1.get())<0 or int(Entry_2.get())<0):
-        messagebox.showwarning("Invalid input", "Enter all valid inputs")
+        messagebox.showwarning("Invalid input", "Enter all valid inputs (Can't zero or negative)")
         return
     Net_price=int(Entry_2.get())
     Orignal_cost=int(Entry_1.get())
     if(Orignal_cost==0):
-        Answer=Label(win,text='0.0000000')
-        Answer.place(x=270,y=140)
+        messagebox.showwarning("Invalid Original Cost", "Can't Zero or negative")
         return
     GST=(Net_price-Orignal_cost)*100/Orignal_cost
     if(GST<0):
@@ -34,8 +34,17 @@ def myclick():
         return
     Answer=Label(win,text=str(GST))
     Answer.place(x=270,y=140)
+    Answer_but['state']=DISABLED
+    New_but['state']=NORMAL
+def newinput():
+    Answer_but['state']=NORMAL
+    New_but['state']=DISABLED
+    Answer.destroy()
 Answer_but=Button(win,text='Calculate GST',font=('Arial black',10),bg='blue',command=myclick,activebackground='yellow',activeforeground='red')
 Answer_but.place(x=220,y=180)
+New_but=Button(win,text='New Input',font=('Arial black',10),bg='red',command=newinput,activebackground='yellow',activeforeground='red')
+New_but.place(x=120,y=180)
+New_but['state']=DISABLED
 win.mainloop()
 
 # *********** Ans -2 ************
