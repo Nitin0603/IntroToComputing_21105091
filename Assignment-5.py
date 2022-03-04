@@ -228,7 +228,7 @@ print(f'Sorted array : {sorted_list}')
 # part b
 m=int(input('Enter the number to find occurences of that number (integer) : '))
 start=0
-end=n
+end=n-1
 founded=False
 while(start<=end):
     mid=((end+start)//2)
@@ -238,7 +238,7 @@ while(start<=end):
     elif(sorted_list[mid]<m):
         start=mid+1
     else:
-        end=mid--1
+        end=mid-1
 
 # part c
 if(founded):
