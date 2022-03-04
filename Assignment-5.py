@@ -230,7 +230,7 @@ m=int(input('Enter the number to find occurences of that number (integer) : '))
 start=0
 end=n
 founded=False
-while(start<end):
+while(start<=end):
     mid=((end+start)//2)
     if(sorted_list[mid]==m):
         founded=True
@@ -238,7 +238,7 @@ while(start<end):
     elif(sorted_list[mid]<m):
         start=mid+1
     else:
-        end=mid
+        end=mid--1
 
 # part c
 if(founded):
